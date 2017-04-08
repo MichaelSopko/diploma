@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="myApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/app.css">
+
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="bower_components/angular-cookies/angular-cookies.js"></script>
+    <script src="app/app.module.js"></script>
+    <script src="app/app.config.js"></script>
+    <script src="app/core/core.module.js"></script>
+    <script src="app/core/checkmark/checkmark.filter.js"></script>
+    <script src="app/core/auth/auth.module.js"></script>
+    <script src="app/core/auth/auth.service.js"></script>
+    <script src="app/core/user/user.module.js"></script>
+    <script src="app/core/user/user.service.js"></script>
+    <script src="app/core/phone/phone.module.js"></script>
+    <script src="app/core/phone/phone.service.js"></script>
+    <script src="app/login/login.module.js"></script>
+    <script src="app/login/login.component.js"></script>
+    <script src="app/sign-up/sign-up.module.js"></script>
+    <script src="app/sign-up/sign-up.component.js"></script>
+    <script src="app/home/home.module.js"></script>
+    <script src="app/home/home.component.js"></script>
+    <script src="app/phone-list/phone-list.module.js"></script>
+    <script src="app/phone-list/phone-list.component.js"></script>
+    <script src="app/phone-detail/phone-detail.module.js"></script>
+    <script src="app/phone-detail/phone-detail.component.js"></script>
+</head>
+<body>
+
+<a ng-if="globals.currentUser" href="/users/signOut">Logout</a>
+
+<div ng-view></div>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+{
+  "name": "Flip_Star",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "async": "^2.3.0",
+    "express": "3.0.5"
+  }
+}

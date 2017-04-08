@@ -1,0 +1,382 @@
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 00:52:32 GMT+0300 (Финляндия (лето))
+Forbidden
+ForbiddenError: Forbidden
+    at SendStream.error (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\send\index.js:282:31)
+    at SendStream.pipe (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\send\index.js:561:12)
+    at sendfile (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\response.js:1057:8)
+    at ServerResponse.res.sendfile (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\response.js:487:3)
+    at ServerResponse.eval [as sendfile] (eval at wrapfunction (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\depd\index.js:413:5), <anonymous>:4:11)
+    at C:\Users\Michael\WebstormProjects\diplom_work\routes\index.js:8:13
+    at Layer.handle [as handle_request] (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:275:10)
+    at Immediate.<anonymous> (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express-session\index.js:489:7)
+    at runCallback (timers.js:670:20)
+    at tryOnImmediate (timers.js:639:5)
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 00:55:45 GMT+0300 (Финляндия (лето))
+console.pog is not a function
+TypeError: console.pog is not a function
+    at C:\Users\Michael\WebstormProjects\diplom_work\routes\index.js:8:17
+    at Layer.handle [as handle_request] (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:275:10)
+    at Immediate.<anonymous> (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express-session\index.js:489:7)
+    at runCallback (timers.js:670:20)
+    at tryOnImmediate (timers.js:639:5)
+    at processImmediate [as _immediateCallback] (timers.js:611:5)
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 00:56:34 GMT+0300 (Финляндия (лето))
+path must be absolute or specify root to res.sendFile
+TypeError: path must be absolute or specify root to res.sendFile
+    at ServerResponse.sendFile (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\response.js:410:11)
+    at C:\Users\Michael\WebstormProjects\diplom_work\routes\index.js:9:13
+    at Layer.handle [as handle_request] (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:275:10)
+    at Immediate.<anonymous> (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express-session\index.js:489:7)
+    at runCallback (timers.js:670:20)
+    at tryOnImmediate (timers.js:639:5)
+    at processImmediate [as _immediateCallback] (timers.js:611:5)
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 00:57:16 GMT+0300 (Финляндия (лето))
+path must be absolute or specify root to res.sendFile
+TypeError: path must be absolute or specify root to res.sendFile
+    at ServerResponse.sendFile (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\response.js:410:11)
+    at C:\Users\Michael\WebstormProjects\diplom_work\routes\index.js:9:13
+    at Layer.handle [as handle_request] (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:275:10)
+    at Immediate.<anonymous> (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express-session\index.js:489:7)
+    at runCallback (timers.js:670:20)
+    at tryOnImmediate (timers.js:639:5)
+    at processImmediate [as _immediateCallback] (timers.js:611:5)
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 00:59:11 GMT+0300 (Финляндия (лето))
+ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+Error: ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+    at Error (native)
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 00:59:37 GMT+0300 (Финляндия (лето))
+ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+Error: ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+    at Error (native)
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 00:59:37 GMT+0300 (Финляндия (лето))
+ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+Error: ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+    at Error (native)
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 00:59:49 GMT+0300 (Финляндия (лето))
+ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+Error: ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+    at Error (native)
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 01:00:00 GMT+0300 (Финляндия (лето))
+ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+Error: ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+    at Error (native)
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 01:00:10 GMT+0300 (Финляндия (лето))
+ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+Error: ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+    at Error (native)
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 01:00:16 GMT+0300 (Финляндия (лето))
+ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+Error: ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+    at Error (native)
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 01:05:00 GMT+0300 (Финляндия (лето))
+ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+Error: ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+    at Error (native)
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 01:05:13 GMT+0300 (Финляндия (лето))
+ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+Error: ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+    at Error (native)
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 01:05:23 GMT+0300 (Финляндия (лето))
+ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+Error: ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+    at Error (native)
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 01:05:36 GMT+0300 (Финляндия (лето))
+Forbidden
+ForbiddenError: Forbidden
+    at SendStream.error (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\send\index.js:282:31)
+    at SendStream.pipe (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\send\index.js:547:12)
+    at sendfile (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\response.js:1057:8)
+    at ServerResponse.sendFile (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\response.js:418:3)
+    at C:\Users\Michael\WebstormProjects\diplom_work\routes\index.js:8:13
+    at Layer.handle [as handle_request] (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:275:10)
+    at Immediate.<anonymous> (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express-session\index.js:489:7)
+    at runCallback (timers.js:670:20)
+    at tryOnImmediate (timers.js:639:5)
+    at processImmediate [as _immediateCallback] (timers.js:611:5)
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 01:08:33 GMT+0300 (Финляндия (лето))
+ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+Error: ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+    at Error (native)
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 01:08:44 GMT+0300 (Финляндия (лето))
+ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes.\index.html'
+Error: ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes.\index.html'
+    at Error (native)
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 01:08:54 GMT+0300 (Финляндия (лето))
+ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes..\index.html'
+Error: ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes..\index.html'
+    at Error (native)
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 01:08:56 GMT+0300 (Финляндия (лето))
+ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes..\index.html'
+Error: ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes..\index.html'
+    at Error (native)
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 01:09:13 GMT+0300 (Финляндия (лето))
+ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+Error: ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+    at Error (native)
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 01:09:14 GMT+0300 (Финляндия (лето))
+ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+Error: ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\routes\index.html'
+    at Error (native)
+---------------------------------------------------------------------------------------------------------
+------------------------------createDefaultAdmin-> save->{ __v: 0,
+  userName: 'SuperAdmin',
+  role: 'superAdmin',
+  password: '936ddd9d502b856be3da472e9d8178a34ae1da2b59ae5e5368e20dee20ae1c18',
+  status: 'Invited',
+  email: 'fiz_dekanat@ukr.net',
+  _id: 58e815c8a22e2f0cd0256189,
+  updatedAt: 2017-04-07T22:42:16.881Z,
+  createdAt: 2017-04-07T22:42:16.881Z }-------------------------------------------------------
+Sat Apr 08 2017 01:42:16 GMT+0300 (Финляндия (лето))
+undefined
+---------------------------------------------------------------------------------------------------------
+------------------------------createDefaultAdmin-> save->{ __v: 0,
+  userName: 'SuperAdmin',
+  role: 'superAdmin',
+  password: '6caa0ca5ca1add76453f9d9d8729159c287bc2ae217792cfafcce865501a9a11',
+  status: 'Invited',
+  email: 'fiz_dekanat@ukr.net',
+  _id: 58e815e380a2fe172c80e9b0,
+  updatedAt: 2017-04-07T22:42:43.503Z,
+  createdAt: 2017-04-07T22:42:43.503Z }-------------------------------------------------------
+Sat Apr 08 2017 01:42:43 GMT+0300 (Финляндия (лето))
+undefined
+---------------------------------------------------------------------------------------------------------
+------------------------------createDefaultAdmin-> findOne->{ _id: 58e815e380a2fe172c80e9b0,
+  userName: 'SuperAdmin',
+  role: 'superAdmin',
+  password: '6caa0ca5ca1add76453f9d9d8729159c287bc2ae217792cfafcce865501a9a11',
+  status: 'Invited',
+  email: 'fiz_dekanat@ukr.net',
+  __v: 0,
+  updatedAt: 2017-04-07T22:42:43.503Z,
+  createdAt: 2017-04-07T22:42:43.503Z }-------------------------------------------------------
+Sat Apr 08 2017 01:42:58 GMT+0300 (Финляндия (лето))
+undefined
+---------------------------------------------------------------------------------------------------------
+------------------------------createDefaultAdmin-> save->{ __v: 0,
+  userName: 'SuperAdmin',
+  role: 'superAdmin',
+  password: '8b45e68fa97d60558fdc9906a8e8643ca1effeb7273a0ca111b90a5a83d14458',
+  status: 'Invited',
+  email: 'fiz_dekanat@ukr.net',
+  _id: 58e816501b55100daced73ac,
+  updatedAt: 2017-04-07T22:44:32.871Z,
+  createdAt: 2017-04-07T22:44:32.870Z }-------------------------------------------------------
+Sat Apr 08 2017 01:44:32 GMT+0300 (Финляндия (лето))
+undefined
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 02:02:25 GMT+0300 (Финляндия (лето))
+ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\app\index.html'
+Error: ENOENT: no such file or directory, stat 'C:\Users\Michael\WebstormProjects\diplom_work\app\index.html'
+    at Error (native)
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 02:05:26 GMT+0300 (Финляндия (лето))
+Access denied
+Error: Access denied
+    at db.isSuperAdmin (C:\Users\Michael\WebstormProjects\diplom_work\handlers\sessions.js:71:15)
+    at Layer.handle [as handle_request] (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:281:22
+    at Function.process_params (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:275:10)
+    at Immediate.<anonymous> (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express-session\index.js:489:7)
+---------------------------------------------------------------------------------------------------------
+------------------------------createDefaultAdmin-> save->ValidationError: `superAdmin` is not a valid enum value for path `role`.-------------------------------------------------------
+Sat Apr 08 2017 10:04:28 GMT+0300 (Финляндия (лето))
+undefined
+---------------------------------------------------------------------------------------------------------
+------------------------------createDefaultAdmin-> save->ValidationError: `superAdmin` is not a valid enum value for path `role`.-------------------------------------------------------
+Sat Apr 08 2017 10:05:03 GMT+0300 (Финляндия (лето))
+undefined
+---------------------------------------------------------------------------------------------------------
+------------------------------createDefaultAdmin-> save->ValidationError: `superAdmin` is not a valid enum value for path `role`.-------------------------------------------------------
+Sat Apr 08 2017 10:05:28 GMT+0300 (Финляндия (лето))
+undefined
+---------------------------------------------------------------------------------------------------------
+------------------------------createDefaultAdmin-> save->ValidationError: `superAdmin` is not a valid enum value for path `role`.-------------------------------------------------------
+Sat Apr 08 2017 10:06:57 GMT+0300 (Финляндия (лето))
+undefined
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 13:00:03 GMT+0300 (Финляндия (лето))
+undefined
+undefined
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 13:03:26 GMT+0300 (Финляндия (лето))
+undefined
+undefined
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 13:05:11 GMT+0300 (Финляндия (лето))
+Not found 
+Error: Not found 
+    at C:\Users\Michael\WebstormProjects\diplom_work\handlers\users.js:135:31
+    at C:\Users\Michael\WebstormProjects\diplom_work\node_modules\mongoose\lib\query.js:2741:18
+    at process._tickCallback (internal/process/next_tick.js:109:7)
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 13:29:04 GMT+0300 (Финляндия (лето))
+User.findByIdAndUpdate(...) is not a function
+TypeError: User.findByIdAndUpdate(...) is not a function
+    at db.editUser (C:\Users\Michael\WebstormProjects\diplom_work\handlers\users.js:299:28)
+    at Layer.handle [as handle_request] (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express-session\index.js:489:7
+    at tryCatcher (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise.successAdapter [as _fulfillmentHandler0] (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\bluebird\js\release\nodeify.js:23:30)
+    at Promise._settlePromise (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\bluebird\js\release\promise.js:566:21)
+    at Promise._settlePromise0 (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\bluebird\js\release\promise.js:614:10)
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 13:30:02 GMT+0300 (Финляндия (лето))
+User.findByIdAndUpdate(...) is not a function
+TypeError: User.findByIdAndUpdate(...) is not a function
+    at db.editUser (C:\Users\Michael\WebstormProjects\diplom_work\handlers\users.js:299:28)
+    at Layer.handle [as handle_request] (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\layer.js:95:5)
+    at next (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\route.js:137:13)
+    at Route.dispatch (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\route.js:112:3)
+    at Layer.handle [as handle_request] (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\layer.js:95:5)
+    at C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:281:22
+    at param (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:354:14)
+    at param (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:365:14)
+    at Function.process_params (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:410:3)
+    at next (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:275:10)
+    at Function.handle (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:174:3)
+    at router (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:47:12)
+    at Layer.handle [as handle_request] (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\layer.js:95:5)
+    at trim_prefix (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:317:13)
+    at C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:284:7
+    at Function.process_params (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:335:12)
+    at next (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express\lib\router\index.js:275:10)
+    at C:\Users\Michael\WebstormProjects\diplom_work\node_modules\express-session\index.js:489:7
+    at tryCatcher (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\bluebird\js\release\util.js:16:23)
+    at Promise.successAdapter [as _fulfillmentHandler0] (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\bluebird\js\release\nodeify.js:23:30)
+    at Promise._settlePromise (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\bluebird\js\release\promise.js:566:21)
+    at Promise._settlePromise0 (C:\Users\Michael\WebstormProjects\diplom_work\node_modules\bluebird\js\release\promise.js:614:10)
+---------------------------------------------------------------------------------------------------------
+------------------------------createDefaultAdmin-> save->WriteError({"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: studentsDB.Users index: email_1 dup key: { : \"zavkaf.teib.test@gmail.com\" }","op":{"userName":"teib2017","role":"Admin","password":"64bb14f7f0fd23b1f2d3839a09c05d257075e431bbf1c33b1464ba69f06ef630","email":"zavkaf.teib.test@gmail.com","_id":"58e8c444de5abd1a5c15e870","updatedAt":"2017-04-08T11:06:44.368Z","createdAt":"2017-04-08T11:06:44.368Z","__v":0}})-------------------------------------------------------
+Sat Apr 08 2017 14:06:44 GMT+0300 (Финляндия (лето))
+undefined
+---------------------------------------------------------------------------------------------------------
+------------------------------createDefaultAdmin-> save->WriteError({"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: studentsDB.Users index: email_1 dup key: { : \"zavkaf.teib.test@gmail.com\" }","op":{"userName":"teib2017","role":"Admin","password":"fe7df3883bd27abf70ae818079f6fdf77e729ca88d5f77d9259fbfc009247271","email":"zavkaf.teib.test@gmail.com","_id":"58e8c4d0b337180c5840831b","updatedAt":"2017-04-08T11:09:04.151Z","createdAt":"2017-04-08T11:09:04.150Z","__v":0}})-------------------------------------------------------
+Sat Apr 08 2017 14:09:04 GMT+0300 (Финляндия (лето))
+undefined
+---------------------------------------------------------------------------------------------------------
+------------------------------createDefaultAdmin-> save->WriteError({"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: studentsDB.Users index: email_1 dup key: { : \"zavkaf.teib.test@gmail.com\" }","op":{"userName":"teib2017","role":"Admin","password":"34cf88935d3bb54f5bdc7e055593b48eb06ccffb8484a5fe911c99bf32f74c8d","email":"zavkaf.teib.test@gmail.com","_id":"58e8c6b4c7434f1e5cdcb988","updatedAt":"2017-04-08T11:17:08.794Z","createdAt":"2017-04-08T11:17:08.793Z","__v":0}})-------------------------------------------------------
+Sat Apr 08 2017 14:17:08 GMT+0300 (Финляндия (лето))
+undefined
+---------------------------------------------------------------------------------------------------------
+------------------------------createDefaultAdmin-> save->WriteError({"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: studentsDB.Users index: email_1 dup key: { : \"zavkaf.teib.test@gmail.com\" }","op":{"userName":"teib2017","role":"Admin","password":"47638d67a2489a3854864f06b4a338a04c9133adaa4e008736fb678ca461b30d","email":"zavkaf.teib.test@gmail.com","_id":"58e8c7207c9f521d9c1626e3","updatedAt":"2017-04-08T11:18:56.383Z","createdAt":"2017-04-08T11:18:56.383Z","__v":0}})-------------------------------------------------------
+Sat Apr 08 2017 14:18:56 GMT+0300 (Финляндия (лето))
+undefined
+---------------------------------------------------------------------------------------------------------
+------------------------------createDefaultAdmin-> save->WriteError({"code":11000,"index":0,"errmsg":"E11000 duplicate key error collection: studentsDB.Users index: email_1 dup key: { : \"zavkaf.teib.test@gmail.com\" }","op":{"userName":"teib2017","role":"Admin","password":"50cfe9dd4666d44269e9dad9ee7b3061b5710c59dd84287bc40804ccb79a2530","email":"zavkaf.teib.test@gmail.com","_id":"58e8ddb0bb70c11cbcf33706","updatedAt":"2017-04-08T12:55:12.235Z","createdAt":"2017-04-08T12:55:12.235Z","__v":0}})-------------------------------------------------------
+Sat Apr 08 2017 15:55:12 GMT+0300 (Финляндия (лето))
+undefined
+---------------------------------------------------------------------------------------------------------
+-------------------------------------------------------------------------------------
+Sat Apr 08 2017 18:52:45 GMT+0300 (Финляндия (лето))
+Not found 
+Error: Not found 
+    at C:\Users\Michael\WebstormProjects\diplom_work\handlers\users.js:119:31
+    at C:\Users\Michael\WebstormProjects\diplom_work\node_modules\mongoose\lib\query.js:2741:18
+    at process._tickCallback (internal/process/next_tick.js:109:7)
+---------------------------------------------------------------------------------------------------------

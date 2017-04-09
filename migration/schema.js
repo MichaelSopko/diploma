@@ -4,6 +4,7 @@ module.exports = function (db) {
     var fs = require('fs');
     var Student = db.model('Student');
     var Teacher = db.model('Teacher');
+    var Department = db.model('Department');
     var async = require('async');
 
     function createStudents(callback) {
@@ -44,6 +45,26 @@ module.exports = function (db) {
         });
     }
 
+    function createDepartments(callback) {
+        fs.readFile(__dirname + '/data/departments.json', function (err, result) {
+            var data = JSON.parse(result).data;
+            var department;
+
+            async.each(data, function (item, eachCb) {
+                department = new Department({
+                    name    : item.name,
+                    imageUrl: item.imageUrl
+                });
+
+                department.save(function (err) {
+                    eachCb(err);
+                });
+            }, function (err) {
+                callback(err);
+            });
+        });
+    }
+
     function drop(callback) {
         Student.remove()
             .exec(function (err) {
@@ -60,8 +81,9 @@ module.exports = function (db) {
     }
 
     return {
-        createStudents: createStudents,
-        createTeachers: createTeachers,
-        drop          : drop
+        createStudents   : createStudents,
+        createTeachers   : createTeachers,
+        createDepartments: createDepartments,
+        drop             : drop
     }
 };

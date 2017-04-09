@@ -1,3 +1,3 @@
 "use strict";
 
-angular.module('core', ['core.phone', 'core.user', 'core.auth']);
+angular.module('core', ['core.phone', 'core.user', 'core.auth', 'core.department']);

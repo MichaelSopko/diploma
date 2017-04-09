@@ -5,12 +5,14 @@ var path = require('path');
 
 module.exports = function (app, db) {
     var usersRouter = require('./users')(db);
+    var departmentsRouter = require('./departments')(db);
 
     app.get('/', function (req, res, next) {
         res.sendFile(path.join(__dirname, '../app/index.html'));
     });
 
     app.use('/users', usersRouter);
+    app.use('/departments', departmentsRouter);
 
     function notFound(req, res, next){
         next();

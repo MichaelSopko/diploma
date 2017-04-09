@@ -1,0 +1,32 @@
+{
+  "data": [
+    {
+      "name": "Теоретична фізика",
+      "imageUrl": "img/departments/theory.png"
+    },
+    {
+      "name": "ТТЕ З/С інформаційна безпека",
+      "imageUrl": "img/departments/teib.png"
+    },
+    {
+      "name": "Квантова електроніка",
+      "imageUrl": "img/departments/cvant.png"
+    },
+    {
+      "name": "Фізика напівпровідників",
+      "imageUrl": "img/departments/napivprov..png"
+    },
+    {
+      "name": "Оптика",
+      "imageUrl": "img/departments/optica.png"
+    },
+    {
+      "name": "Прикладна фізика",
+      "imageUrl": "img/departments/prykladna.png"
+    },
+    {
+      "name": "Фізика ядра та елементарних частин",
+      "imageUrl": "img/departments/nuclear.png"
+    }
+  ]
+}

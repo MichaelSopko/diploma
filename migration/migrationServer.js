@@ -39,6 +39,7 @@ app.get('/', function (req, res) {
 
     html += '<a href="/databases/createStudents">Create Students</a><br/>';
     html += '<a href="/databases/createTeachers">Create Teachers</a><br/>';
+    html += '<a href="/databases/createDepartments">Create Departments</a><br/>';
     html += '<a href="/databases/drop">Drop Tables</a><br/>';
 
     res.send(html);
@@ -56,6 +57,16 @@ app.get('/databases/createStudents', function (req, res) {
 
 app.get('/databases/createTeachers', function (req, res) {
     schema.createTeachers(function (err) {
+        if (err) {
+            return res.send(err);
+        }
+
+        res.send('<b>Create Take Success</b>');
+    });
+});
+
+app.get('/databases/createDepartments', function (req, res) {
+    schema.createDepartments(function (err) {
         if (err) {
             return res.send(err);
         }

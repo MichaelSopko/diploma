@@ -14,7 +14,7 @@ var User = function (db) {
     var Teacher = db.model('Teacher');
     var mailer = require('../helpers/mailer');
     var session = new SessionHandler(db);
-    var passRegExp = /^[0-9A-Za-z]{6,8}$/;
+    var passRegExp = /^[0-9A-Za-z]{6,24}$/;
     var nameRegExp = /[a-zA-Z]/;
     var emailRegExp = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
 
@@ -116,7 +116,7 @@ var User = function (db) {
                 }
 
                 if (!model) {
-                    return cb(new Error(RESPONSE.ON_ACTION.NOT_FOUND));
+                    return cb(new Error(RESPONSE.ON_ACTION.NOT_FOUND_USER));
                 }
 
                 cb(null, model._id);
@@ -132,7 +132,7 @@ var User = function (db) {
                 }
 
                 if (!model) {
-                    return cb(new Error(RESPONSE.ON_ACTION.NOT_FOUND));
+                    return cb(new Error(RESPONSE.ON_ACTION.NOT_FOUND_USER));
                 }
 
                 cb(null, model._id);
@@ -187,7 +187,7 @@ var User = function (db) {
                         cb();
                     })
                 } else {
-                    cb({error: 'Користувача не знайдено'})
+                    cb({error: RESPONSE.ON_ACTION.NOT_FOUND_USER})
                 }
             }
         ], function (err) {

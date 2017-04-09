@@ -5,7 +5,7 @@ del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
+fieldset, form, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header,
@@ -84,7 +84,8 @@ footer a:hover{
     color: #bbb;
 }
 
-.form-signin {
+.login-form,
+.registration-form {
     max-width: 300px;
     padding: 19px 29px 29px;
     margin: 0 auto 20px;
@@ -100,5 +101,9 @@ footer a:hover{
 
 .sign-up{
     padding: 8px;
+}
+
+.check-user{
+    padding: 10px;
 }
 

@@ -145,7 +145,7 @@ var User = function (db) {
         var ticketNumber = options.ticketNumber;
         var email = options.email;
         var userType = options.userType;
-        var pass = (generateConfirmToken()).slice(0, 6);
+        var pass = options.password; //(generateConfirmToken()).slice(0, 6);
         var user;
         var studentId = null;
         var teacherId = null;
@@ -187,7 +187,7 @@ var User = function (db) {
                         cb();
                     })
                 } else {
-                    cb({error: 'invalid user type'})
+                    cb({error: 'Користувача не знайдено'})
                 }
             }
         ], function (err) {

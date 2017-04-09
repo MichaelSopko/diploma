@@ -7,14 +7,15 @@ angular
         controller: ['$scope', '$location', 'Auth', function LoginController($scope, $location, Auth) {
             $scope.signUp = signUp;
             $scope.userType = 'student';
+            $scope.error = null;
 
             function signUp() {
                 $scope.dataLoading = true;
+                $scope.error = null;
 
                 var obj = {
                     userName: $scope.username,
                     password: $scope.password,
-                    confirmPass: $scope.confirmPass,
                     ticketNumber: $scope.ticketNumber,
                     userType: $scope.userType,
                     email: $scope.email

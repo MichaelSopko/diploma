@@ -10,6 +10,9 @@ angular
                 .when('/', {
                     template: '<home-page></home-page>'
                 })
+                .when('/speciality', {
+                    template: '<specialty></specialty>'
+                })
                 .when('/login', {
                     template: '<login></login>'
                 })

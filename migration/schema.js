@@ -5,6 +5,7 @@ module.exports = function (db) {
     var Student = db.model('Student');
     var Teacher = db.model('Teacher');
     var Department = db.model('Department');
+    var Specialty = db.model('Specialty');
     var async = require('async');
 
     function createStudents(callback) {
@@ -56,8 +57,24 @@ module.exports = function (db) {
                     imageUrl: item.imageUrl
                 });
 
-                department.save(function (err) {
-                    eachCb(err);
+                var specialties = item.specialties;
+
+                department.save(function (err, res) {
+
+                    async.each(specialties, function (el, innerCb) {
+                        var specialty = new Specialty({
+                            name    : el.name,
+                            imageUrl: el.imageUrl,
+                            departmentId: res._id
+                        });
+
+                        specialty.save(function () {
+                            innerCb();
+                        });
+                    }, function (err) {
+                        eachCb(err);
+                    });
+
                 });
             }, function (err) {
                 callback(err);

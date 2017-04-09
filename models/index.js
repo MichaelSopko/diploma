@@ -10,4 +10,5 @@ module.exports = function (db) {
     require('./messages')(db);
     require('./schedules')(db);
     require('./departments')(db);
+    require('./specialties')(db);
 };

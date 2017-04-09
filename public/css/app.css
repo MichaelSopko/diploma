@@ -108,14 +108,20 @@ footer a:hover{
 }
 
 .grid {
-    width: 50%;
+    width: 90%;
+    margin: 0 auto;
+    display: grid;
+    grid-gap: 10px;
+    grid-template-columns: 20% 20% 20% 20%;
+    justify-content: space-between;
+    text-align: center;
 }
 
 .grid__item{
     padding: 1px;
 }
 
-.grid__item:nth-child(1) {
+/*.grid__item:nth-child(1) {
     width: 50%;
     float: left;
 }
@@ -148,4 +154,4 @@ footer a:hover{
 .grid__item:nth-child(7) {
     width: 25%;
     float: left;
-}
+}*/

@@ -6,6 +6,7 @@ var path = require('path');
 module.exports = function (app, db) {
     var usersRouter = require('./users')(db);
     var departmentsRouter = require('./departments')(db);
+    var specyalitiesRouter = require('./specyalities')(db);
 
     app.get('/', function (req, res, next) {
         res.sendFile(path.join(__dirname, '../app/index.html'));
@@ -13,6 +14,7 @@ module.exports = function (app, db) {
 
     app.use('/users', usersRouter);
     app.use('/departments', departmentsRouter);
+    app.use('/specialties', specyalitiesRouter);
 
     function notFound(req, res, next){
         next();

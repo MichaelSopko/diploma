@@ -2,31 +2,53 @@
   "data": [
     {
       "name": "Теоретична фізика",
-      "imageUrl": "img/departments/theory.png"
+      "imageUrl": "img/departments/theory.png",
+      "specialties": [{
+        "name": "астрономія",
+        "imageUrl": "img/departments/astronomy.png"
+      },{
+        "name": "БІКС",
+        "imageUrl": "img/departments/biks.png"
+      },{
+        "name": "біомед та фіз.ел",
+        "imageUrl": "img/departments/bio.png"
+      },{
+        "name": "Середня освіта",
+        "imageUrl": "img/departments/medium.png"
+      },{
+        "name": "СТЗІ",
+        "imageUrl": "img/departments/stzi.png"
+      }]
     },
     {
       "name": "ТТЕ З/С інформаційна безпека",
-      "imageUrl": "img/departments/teib.png"
+      "imageUrl": "img/departments/teib.png",
+      "specialties": []
     },
     {
       "name": "Квантова електроніка",
-      "imageUrl": "img/departments/cvant.png"
+      "imageUrl": "img/departments/cvant.png",
+      "specialties": []
     },
     {
       "name": "Фізика напівпровідників",
-      "imageUrl": "img/departments/napivprov..png"
+      "imageUrl": "img/departments/napivprov.png",
+      "specialties": []
     },
     {
       "name": "Оптика",
-      "imageUrl": "img/departments/optica.png"
+      "imageUrl": "img/departments/optica.png",
+      "specialties": []
     },
     {
       "name": "Прикладна фізика",
-      "imageUrl": "img/departments/prykladna.png"
+      "imageUrl": "img/departments/prykladna.png",
+      "specialties": []
     },
     {
       "name": "Фізика ядра та елементарних частин",
-      "imageUrl": "img/departments/nuclear.png"
+      "imageUrl": "img/departments/nuclear.png",
+      "specialties": []
     }
   ]
 }

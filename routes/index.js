@@ -8,6 +8,7 @@ module.exports = function (app, db) {
     var departmentsRouter = require('./departments')(db);
     var specyalitiesRouter = require('./specyalities')(db);
     var studentsRouter = require('./students')(db);
+    var reportsRouter = require('./reports')(db);
 
     app.get('/', function (req, res, next) {
         res.sendFile(path.join(__dirname, '../app/index.html'));
@@ -17,6 +18,7 @@ module.exports = function (app, db) {
     app.use('/departments', departmentsRouter);
     app.use('/specialties', specyalitiesRouter);
     app.use('/students', studentsRouter);
+    app.use('/reports', reportsRouter);
 
     function notFound(req, res, next){
         next();

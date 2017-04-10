@@ -1,30 +1,34 @@
 <div ng-if="!departmentId" class="grid">
     <div class="grid__item" ng-repeat="department in departments">
-        <a ng-click="checkDepartmnet(department._id)" href="javascript:;"><img width="100%" height="100%" ng-src="{{department.imageUrl}}" alt=""></a>
+        <a ng-click="checkDepartmnet(department._id)" href="javascript:;">
+            <img width="100%" height="100%" ng-src="{{department.imageUrl}}" alt="">
+        </a>
     </div>
 </div>
 
 <div ng-if="departmentId && !specialityId" class="grid">
     <div class="grid__item" ng-repeat="speciality in specialities">
-        <a ng-click="checkSpeciality(speciality._id)" href="javascript:;"><img width="100%" height="100%" ng-src="{{speciality.imageUrl}}" alt=""></a>
+        <a ng-click="checkSpeciality(speciality._id)" href="javascript:;">
+            <img width="100%" height="100%" ng-src="{{speciality.imageUrl}}" alt="">
+        </a>
     </div>
 </div>
 
 <div class="report-container" ng-if="departmentId && specialityId">
     <H3 class="report-header">Звіт відвідування</H3>
-    <form class="form-horizontal">
+    <form class="form-horizontal" ng-submit="sendReport()">
         <div class="form-group">
             <label for="department">Кафедра: </label>
-            <span id="department" class="form-control-static"> {{department.name}}</span>
+            <span id="department" class="form-control-static" ng-model="department"> {{department.name}}</span>
         </div>
         <div class="form-group">
             <label for="department">Спеціальність: </label>
-            <span id="speciality" class="form-control-static"> {{speciality.name}}</span>
+            <span id="speciality" class="form-control-static" ng-model="speciality"> {{speciality.name}}</span>
         </div>
         <div class="form-group">
             <label for="course" class="control-label col-sm-1">Курс: </label>
             <div class="col-sm-2">
-                <select id="course" class="form-control">
+                <select id="course" class="form-control" ng-model="course" required>
                     <option value="1">1</option>
                     <option value="2">2</option>
                     <option value="3">3</option>
@@ -35,24 +39,37 @@
             </div>
             <label for="room" class="control-label col-sm-2">Аудиторія: </label>
             <div class="col-sm-2">
-                <input id="room" type="text" class="form-control">
+                <input id="room" type="text" class="form-control" ng-model="room" required />
             </div>
-            <label for="para" class="control-label col-sm-2">Пара: </label>
+            <label for="couple" class="control-label col-sm-2">Пара: </label>
             <div class="form-group col-sm-2">
-                <input id="para" type="number" class="form-control">
+                <select id="couple" class="form-control" ng-model="couple" required>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                </select>
+            </div>
+        </div>
+        <div class="form-group" ng-if="currentUser.type === 'teacher'">
+            <label for="group" class="control-label col-sm-1">Група:</label>
+            <div class="col-sm-2">
+                <input id="group" type="text" class="form-control" ng-model="group" required />
             </div>
         </div>
         <div class="form-group">
             <label for="subject">Назва предмету: </label>
-            <input id="subject" type="text" class="form-control">
+            <input id="subject" type="text" class="form-control" ng-model="subject" required />
         </div>
         <div class="form-group">
-            <label for="tema">Тема:</label>
-            <input  id="tema" type="text" class="form-control">
+            <label for="topic">Тема:</label>
+            <input  id="topic" type="text" class="form-control" ng-model="topic" required />
         </div>
-        <div class="form-group">
+        <div class="form-group" ng-if="currentUser.type === 'student'">
             <label for="teacher">Викладач:</label>
-            <input id="teacher" type="text" class="form-control">
+            <input id="teacher" type="text" class="form-control" ng-model="teacher" required />
         </div>
         <button type="submit" class="btn btn-default">Відправити</button>
     </form>

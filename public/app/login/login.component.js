@@ -24,7 +24,7 @@ angular
                         return;
                     }
 
-                    Auth.SetCredentials($scope.username, $scope.password);
+                    Auth.SetCredentials($scope.username, data.data.userId, data.data.type);
                     $location.path('/');
                 });
             }

@@ -1,7 +1,7 @@
 "use strict";
 
 angular.module('core', [
-    'core.phone',
+    'core.report',
     'core.user',
     'core.auth',
     'core.department',

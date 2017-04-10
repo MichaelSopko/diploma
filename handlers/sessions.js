@@ -18,13 +18,15 @@ var Session = function (db) {
         req.session.uId = userModel._id;
         req.session.userName = userModel.userName;
         req.session.role = userModel.role;
+        req.session.type = userModel.teacherId ? 'teacher' : 'student';
 
         res.status(200).send({
             success: RESPONSE.AUTH.LOG_IN,
             data   : {
                 userName: userModel.userName,
                 role    : userModel.role,
-                userId  : userModel._id
+                userId  : userModel._id,
+                type    : userModel.teacherId ? 'teacher' : 'student'
             }
         });
     };
@@ -45,20 +47,6 @@ var Session = function (db) {
         res.redirect('/');
     };
 
-    this.isSuperAdmin = function (req, res, next) {
-        var err;
-
-        if (req.session && req.session.role == 'superAdmin') {
-            console.log('Session: role:', req.session.role ,'  ID: ', req.session.uId, '  NAME: ', req.session.userName );
-            return next();
-        }
-
-        err = new Error(RESPONSE.AUTH.NO_PERMISSIONS);
-        err.status = 403;
-        return next(err);
-    };
-
-
     this.killWithUnAuthenticated = function (req, res, next) {
         if (req.session) {
             req.session.destroy();
@@ -69,11 +57,10 @@ var Session = function (db) {
     this.isAdmin = function (req, res, next) {
         var err;
 
-        if ((req.session && req.session.role == 'superAdmin') || (req.session && req.session.role == 'Admin')) {
+        if (req.session && req.session.role === 'Admin') {
             console.log('Session: role:', req.session.role ,'  ID: ', req.session.uId, '  NAME: ', req.session.userName );
             return next();
         }
-
 
         err = new Error(RESPONSE.AUTH.NO_PERMISSIONS);
         err.status = 403;

@@ -32,14 +32,15 @@ angular
                 }, callback);
         };
 
-        this.SetCredentials = function(username, password) {
-            var authdata = Base64.encode(username + ':' + password);
+        this.SetCredentials = function(username, userId, type) {
+            var authdata = Base64.encode(username + ':' + userId);
 
             $rootScope.globals = {
                 currentUser: {
                     username: username,
-                    authdata: authdata,
-                    isLoggedIn: true
+                    userId: userId,
+                    isLoggedIn: true,
+                    type: type
                 }
             };
 

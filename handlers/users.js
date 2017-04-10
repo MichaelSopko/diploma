@@ -270,7 +270,8 @@ var User = function (db) {
                 return res.status(200).send({
                     data: {
                         userName: user.userName,
-                        role    : req.session.role
+                        role    : req.session.role,
+                        type    : user.teacherId ? 'teacher' : 'student'
                     }
                 });
             });

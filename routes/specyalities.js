@@ -10,6 +10,7 @@ module.exports = function (db) {
     var session = new SessionHandler(db);
 
     router.route('/').get(session.isAuthenticatedUser, specialtiesHandler.getAll);
+    router.route('/:id').get(session.isAuthenticatedUser, specialtiesHandler.getOne);
 
     return router;
 };

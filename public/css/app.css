@@ -118,37 +118,20 @@ footer a:hover{
     width: 25%;
 }
 
-/*.grid__item:nth-child(1) {
-    width: 50%;
-    float: left;
+.report-container{
+    max-width: 800px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px 40px 40px;
 }
 
-.grid__item:nth-child(2) {
-    width: 50%;
-    float: left;
+.report-header{
+    text-align: center;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+    border-bottom: 2px solid #804343;
 }
-
-.grid__item:nth-child(3) {
-    width: 50%;
-    float: left;
+.form-horizontal .form-group{
+    margin-right: 0 !important;
+    margin-left: 0 !important;
 }
-
-.grid__item:nth-child(4) {
-    width: 25%;
-    float: left;
-}
-
-.grid__item:nth-child(5) {
-    width: 25%;
-    float: left;
-}
-
-.grid__item:nth-child(6) {
-    width: 25%;
-    float: left;
-}
-
-.grid__item:nth-child(7) {
-    width: 25%;
-    float: left;
-}*/

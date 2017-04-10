@@ -1,9 +1,9 @@
 "use strict";
 
 angular
-    .module('phoneDetail')
-    .component('phoneDetail', {
-        templateUrl: 'phone-detail/phone-detail.template.html',
+    .module('report')
+    .component('report', {
+        templateUrl: 'app/report/report.template.html',
         controller: ['$routeParams', 'Phone',
             function PhoneDetailController($routeParams, Phone) {
                 var self = this;

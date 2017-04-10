@@ -10,6 +10,6 @@ angular
         'specialty',
         'signUp',
         'homePage',
-        'phoneDetail',
+        'report',
         'phoneList'
     ]);

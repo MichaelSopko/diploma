@@ -22,6 +22,22 @@ var Department = function (db) {
                 res.status(200).send(models);
             });
     };
+
+    this.getOne = function (req, res, next) {
+        var id = req.params.id;
+
+        Specialty
+            .findOne({_id: id})
+            .exec(function (err, model) {
+                if (err) {
+                    return next()
+                }
+
+                res.status(200).send(model);
+            });
+
+    };
+
 };
 
 module.exports = Department;

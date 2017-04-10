@@ -14,5 +14,14 @@ angular
             }, callback);
         };
 
+        this.getById = function (id, callback) {
+            $http({
+                url: '/departments/' + id,
+                method: 'GET'
+            }).then(function (response) {
+                callback(null, response.data);
+            }, callback);
+        };
+
         return this;
     }]);

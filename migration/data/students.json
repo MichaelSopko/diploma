@@ -1,15 +1,23 @@
 {
   "data": [
     {
+      "firstName": "Іван",
+      "lastName": "Іванов",
       "ticketNumber": "qw225521"
     },
     {
+      "firstName": "Іван",
+      "lastName": "Іванов",
       "ticketNumber": "df200521"
     },
     {
+      "firstName": "Іван",
+      "lastName": "Іванов",
       "ticketNumber": "aa444444"
     },
     {
+      "firstName": "Іван",
+      "lastName": "Іванов",
       "ticketNumber": "cc555555"
     }
   ]

@@ -13,6 +13,9 @@ angular
                 .when('/speciality', {
                     template: '<specialty></specialty>'
                 })
+                .when('/students', {
+                    template: '<students></students>'
+                })
                 .when('/login', {
                     template: '<login></login>'
                 })

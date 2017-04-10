@@ -6,6 +6,7 @@ angular
         'ngCookies',
         'core',
         'login',
+        'students',
         'specialty',
         'signUp',
         'homePage',

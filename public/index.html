@@ -25,6 +25,8 @@
     <script src="app/core/department/department.service.js"></script>
     <script src="app/core/user/user.module.js"></script>
     <script src="app/core/user/user.service.js"></script>
+    <script src="app/core/students/student.module.js"></script>
+    <script src="app/core/students/student.service.js"></script>
     <script src="app/core/phone/phone.module.js"></script>
     <script src="app/core/phone/phone.service.js"></script>
     <script src="app/login/login.module.js"></script>
@@ -33,6 +35,8 @@
     <script src="app/sign-up/sign-up.component.js"></script>
     <script src="app/home/home.module.js"></script>
     <script src="app/home/home.component.js"></script>
+    <script src="app/students/students.module.js"></script>
+    <script src="app/students/students.component.js"></script>
     <script src="app/specialty/specialty.module.js"></script>
     <script src="app/specialty/specialty.component.js"></script>
     <script src="app/phone-list/phone-list.module.js"></script>
@@ -42,7 +46,17 @@
 </head>
 <body>
 
-<a ng-if="globals.currentUser" href="/users/signOut">Logout</a>
+<nav  ng-if="globals.currentUser"  class="navbar navbar-inverse">
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav">
+            <li><a href="#">Link</a></li>
+            <li><a href="#">Link</a></li>
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+            <li><a href="/users/signOut"><span class="glyphicon glyphicon-log-in"></span>  Вийти</a></li>
+        </ul>
+    </div>
+</nav>
 
 <div ng-view></div>
 

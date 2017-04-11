@@ -135,3 +135,11 @@ footer a:hover{
     margin-right: 0 !important;
     margin-left: 0 !important;
 }
+
+.container{
+    background-color: #fff;
+}
+
+.middle{
+    vertical-align: middle !important;
+}

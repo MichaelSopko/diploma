@@ -35,6 +35,8 @@ angular
 
         }]).run(['$rootScope', '$location', '$cookies', '$http', 'Auth',
         function($rootScope, $location, $cookies, $http, Auth) {
+            $rootScope.location = $location.path()
+
             checkAuth();
 
             function checkAuth() {

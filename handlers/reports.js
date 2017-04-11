@@ -24,7 +24,7 @@ var Department = function (db) {
     };
 
     this.create = function (req, res, next) {
-        var body = req.body;
+        var body = req.query;
         var report = new Report({
             department: body.department,
             speciality: body.speciality,

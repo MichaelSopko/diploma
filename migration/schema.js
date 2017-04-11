@@ -15,7 +15,9 @@ module.exports = function (db) {
 
             async.each(data, function (item, eachCb) {
                 student = new Student({
-                    ticketNumber: item.ticketNumber
+                    ticketNumber: item.ticketNumber,
+                    firstName: item.firstName,
+                    lastName: item.lastName
                 });
 
                 student.save(function (err) {

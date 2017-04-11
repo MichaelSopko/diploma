@@ -52,7 +52,7 @@ li{
     position: fixed;
     width: 100%;
     height: 100%;
-    background: url("../img/study_1.jpg")100% 100% no-repeat; /* Добавляем фон */
+    background: url("../img/1.jpg")100% 100% no-repeat; /* Добавляем фон */
     background-size: cover; /* Масштабируем фон */
 }
 

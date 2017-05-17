@@ -4,17 +4,30 @@ angular
     .module('report')
     .component('report', {
         templateUrl: 'app/report/report.template.html',
-        controller: ['$routeParams', 'Phone',
-            function PhoneDetailController($routeParams, Phone) {
-                var self = this;
+        controller: ['$rootScope', '$scope',
+            function PhoneDetailController($rootScope, $scope) {
+                $scope.speciality = $rootScope.globals.speciality;
+                $scope.department = $rootScope.globals.department;
 
-                self.phone = Phone.get({phoneId: $routeParams.phoneId}, function(phone) {
-                    self.setImage(phone.images[0]);
-                });
+                $scope.sendReport = sendReport;
 
-                self.setImage = function setImage(imageUrl) {
-                    self.mainImageUrl = imageUrl;
-                };
+                function sendReport() {
+                    var data = {
+                        department: $scope.department,
+                        speciality: $scope.speciality,
+                        course: $scope.course,
+                        room: $scope.room,
+                        couple: $scope.couple,
+                        subject: $scope.subject,
+                        topic: $scope.topic,
+                        teacher: $scope.teacher,
+                        date: Date.now()
+                    };
+
+                    Report.createReport(data, function (err, data) {
+                        alert('success');
+                    });
+                }
             }
         ]
     });

@@ -38,6 +38,9 @@
     <script src="app/sign-up/sign-up.component.js"></script>
     <script src="app/home/home.module.js"></script>
     <script src="app/home/home.component.js"></script>
+    <script src="app/test/test.module.js"></script>
+    <script src="app/test/test.directive.js"></script>
+    <script src="app/test/test.component.js"></script>
     <script src="app/students/students.module.js"></script>
     <script src="app/students/students.component.js"></script>
     <script src="app/specialty/specialty.module.js"></script>
@@ -52,7 +55,7 @@
 <nav  ng-if="globals.currentUser"  class="navbar navbar-inverse">
     <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav">
-            <li ng-class="{'active': location === ''}"><a href="#">Створення звіту </a></li>
+            <li ng-class="{'active': location === ''}"><a href="#/report">Створення звіту </a></li>
             <li ng-class="{'active': location === 'students'}"><a href="#/students">Список студентів</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">

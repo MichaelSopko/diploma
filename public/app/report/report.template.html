@@ -1,21 +1,60 @@
-<form>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Email">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
-    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
-  </div>
-  <div class="form-group">
-    <label for="exampleInputFile">File input</label>
-    <input type="file" id="exampleInputFile">
-    <p class="help-block">Example block-level help text here.</p>
-  </div>
-  <div class="checkbox">
-    <label>
-      <input type="checkbox"> Check me out
-    </label>
-  </div>
-  <button type="submit" class="btn btn-default">Submit</button>
-</form>
+<div class="report-container">
+  <H3 class="report-header">Звіт відвідування</H3>
+  <form class="form-horizontal" ng-submit="sendReport()">
+    <div class="form-group">
+      <label for="department">Кафедра: </label>
+      <span id="department" class="form-control-static" ng-model="department"> {{department.name}}</span>
+    </div>
+    <div class="form-group">
+      <label for="department">Спеціальність: </label>
+      <span id="speciality" class="form-control-static" ng-model="speciality"> {{speciality.name}}</span>
+    </div>
+    <div class="form-group">
+      <label for="course" class="control-label col-sm-1">Курс: </label>
+      <div class="col-sm-2">
+        <select id="course" class="form-control" ng-model="course" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+      </div>
+      <label for="room" class="control-label col-sm-2">Аудиторія: </label>
+      <div class="col-sm-2">
+        <input id="room" type="number" maxlength="3" max="999" min="0" class="form-control" ng-model="room" required />
+      </div>
+      <label for="couple" class="control-label col-sm-2">Пара: </label>
+      <div class="form-group col-sm-2">
+        <select id="couple" class="form-control" ng-model="couple" required>
+          <option value="1">1</option>
+          <option value="2">2</option>
+          <option value="3">3</option>
+          <option value="4">4</option>
+          <option value="5">5</option>
+          <option value="6">6</option>
+        </select>
+      </div>
+    </div>
+    <div class="form-group" ng-if="currentUser.type === 'teacher'">
+      <label for="group" class="control-label col-sm-1">Група:</label>
+      <div class="col-sm-2">
+        <input id="group" type="text" class="form-control" ng-model="group" required />
+      </div>
+    </div>
+    <div class="form-group">
+      <label for="subject">Назва предмету: </label>
+      <input id="subject" type="text" class="form-control" ng-model="subject" required />
+    </div>
+    <div class="form-group">
+      <label for="topic">Тема:</label>
+      <input  id="topic" type="text" class="form-control" ng-model="topic" required />
+    </div>
+    <div class="form-group" ng-if="currentUser.type === 'student'">
+      <label for="teacher">Викладач:</label>
+      <input id="teacher" type="text" class="form-control" ng-model="teacher" required />
+    </div>
+    <button type="submit" class="btn btn-default">Відправити</button>
+  </form>
+</div>

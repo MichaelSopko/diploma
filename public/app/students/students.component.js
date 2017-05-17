@@ -33,6 +33,7 @@ angular
             }];
 
             $scope.changeSorting = changeSorting;
+            $scope.convertSorting = convertSorting;
 
             Student.getStudents({}, function (err, data) {
                 $scope.students = data;
@@ -46,6 +47,10 @@ angular
                     sort.column = columnName;
                     sort.descending = false;
                 }
+            }
+
+            function convertSorting() {
+                return $scope.sort.descending ? '-' + $scope.sort.column : $scope.sort.column;
             }
 
         }]

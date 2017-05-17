@@ -4,8 +4,8 @@ angular
     .module('homePage')
     .component('homePage', {
         templateUrl: 'app/home/home.template.html',
-        controller: ['$rootScope', '$scope', 'Department', 'Specialty', 'Report',
-            function HomePageController($rootScope, $scope, Department, Specialty, Report) {
+        controller: ['$rootScope', '$scope', '$location', 'Department', 'Specialty', 'Report',
+            function HomePageController($rootScope, $scope, $location, Department, Specialty, Report) {
                 $scope.departments = [];
                 $scope.specialities = [];
                 $scope.departmentId = null;
@@ -31,6 +31,7 @@ angular
 
                     Department.getById(id, function (err, data) {
                         $scope.department = data;
+                        $rootScope.globals.department = data;
                     });
                 }
 
@@ -39,6 +40,8 @@ angular
 
                     Specialty.getById(id, function (err, data) {
                         $scope.speciality = data;
+                        $rootScope.globals.speciality = data;
+                        $location.path('/report');
                     });
                 }
 

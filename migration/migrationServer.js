@@ -1,7 +1,7 @@
 var express = require('express');
 var http = require('http');
 var mongoose = require('mongoose');
-
+var path = require('path');
 //TODO change NODE_ENV for production server
 process.env.NODE_ENV = 'development';
 
@@ -33,16 +33,8 @@ db.on('error', function() {
 require('../models/index')(db);
 schema = require('./schema')(db);
 
-app.get('/', function (req, res) {
-    var html = "";
-    html += '<h2>Database Operations</h2><hr/>';
-
-    html += '<a href="/databases/createStudents">Create Students</a><br/>';
-    html += '<a href="/databases/createTeachers">Create Teachers</a><br/>';
-    html += '<a href="/databases/createDepartments">Create Departments</a><br/>';
-    html += '<a href="/databases/drop">Drop Tables</a><br/>';
-
-    res.send(html);
+app.get('/', function (req, res, next) {
+    res.sendfile(path.join(__dirname, 'index.html'));
 });
 
 app.get('/databases/createStudents', function (req, res) {

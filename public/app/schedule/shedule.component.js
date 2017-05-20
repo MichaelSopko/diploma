@@ -66,7 +66,20 @@ angular
                         return item.lesson === lesson && item.group === group;
                     });
 
-                    return item && item.name || '';
+                    if (!item) {
+                        item = {
+                            id: 4,
+                            day: $scope.selectedDay,
+                            course: $scope.course,
+                            name: "",
+                            lesson: lesson,
+                            group: group
+                        };
+                        $scope.subjects.push(item);
+                    }
+
+
+                    return  $scope.subjects[$scope.subjects.indexOf(item)];
                 };
 
                 $scope.showGroup = function(user) {
@@ -133,23 +146,14 @@ angular
 
                 // save edits
                 $scope.saveTable = function() {
-                    var results = [];
-                    for (var i = $scope.users.length; i--;) {
-                        var user = $scope.users[i];
-                        // actually delete user
-                        if (user.isDeleted) {
-                            $scope.users.splice(i, 1);
-                        }
-                        // mark as not new
-                        if (user.isNew) {
-                            user.isNew = false;
-                        }
+                    $http({
+                        method : "POST",
+                        url : "save",
+                        data: $scope.subjects
+                    }).then(function mySucces(response) {
 
-                        // send on server
-                        results.push($http.post('/saveUser', user));
-                    }
-
-                    return $q.all(results);
+                    }, function myError(response) {
+                    });
                 };
             }
         ]

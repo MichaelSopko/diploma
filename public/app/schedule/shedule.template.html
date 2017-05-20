@@ -1,0 +1,66 @@
+<div class="container-shedule">
+  <H3 class="report-header">Розклад занять</H3>
+  <form editable-form name="tableform" onaftersave="saveTable()" oncancel="cancel()">
+
+    <div class="form-inline day">
+      <div class="form-group">
+        <label class="control-label" for="course">День тижня: </label>
+        <select class="form-control" ng-model="selectedDay" ng-change="changeDay()">
+          <option ng-repeat="day in days" value="{{day.id}}">{{day.name}}</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label class="control-label" for="course">Курс: </label>
+        <select id="course" class="form-control" ng-model="course" ng-change="changeCourse()">
+          <option ng-repeat="course in courses" value="{{course}}">{{course}}</option>
+        </select>
+      </div>
+    </div>
+
+
+    <!-- table -->
+
+    <table class="table table-bordered table-hover table-condensed">
+      <tr style="font-weight: bold">
+        <td>Пара</td>
+
+        <td ng-repeat="group in groups">Група {{ group }}</td>
+
+      </tr>
+      <tbody>
+
+      <tr ng-repeat="lesson in lessons">
+        <td>
+          {{ lesson || '' }}
+        </td>
+
+        <td ng-repeat="group in groups">
+
+           <span editable-text="getSubject(lesson, group) || ''" e-form="tableform">
+               {{ getSubject(lesson, group) }}
+          </span>
+
+        </td>
+
+      </tr>
+
+      </tbody>
+
+    </table>
+
+
+    <!-- buttons -->
+    <div class="btn-edit">
+      <button type="button" class="btn btn-default" ng-show="!tableform.$visible" ng-click="tableform.$show()">
+        edit
+      </button>
+    </div>
+    <div class="btn-form" ng-show="tableform.$visible">
+      <button type="button" ng-disabled="tableform.$waiting" ng-click="addUser()" class="btn btn-default pull-right">add row</button>
+      <button type="submit" ng-disabled="tableform.$waiting" class="btn btn-primary">save</button>
+      <button type="button" ng-disabled="tableform.$waiting" ng-click="tableform.$cancel()" class="btn btn-default">cancel</button>
+    </div>
+
+  </form>
+</div>
+

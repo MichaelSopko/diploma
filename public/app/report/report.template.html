@@ -37,7 +37,14 @@
         </select>
       </div>
     </div>
+
     <div class="form-group" ng-if="currentUser.type === 'teacher'">
+      <label for="group" class="control-label col-sm-1">Група:</label>
+      <div class="col-sm-2">
+        <input id="group" type="text" class="form-control" ng-model="group" required />
+      </div>
+    </div>
+    <div class="form-group">
       <label for="group" class="control-label col-sm-1">Група:</label>
       <div class="col-sm-2">
         <input id="group" type="text" class="form-control" ng-model="group" required />

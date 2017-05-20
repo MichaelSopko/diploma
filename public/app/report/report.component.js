@@ -4,8 +4,8 @@ angular
     .module('report')
     .component('report', {
         templateUrl: 'app/report/report.template.html',
-        controller: ['$rootScope', '$scope',
-            function PhoneDetailController($rootScope, $scope) {
+        controller: ['$rootScope', '$scope', 'Report', '$location',
+            function PhoneDetailController($rootScope, $scope, Report, $location) {
                 $scope.speciality = $rootScope.globals.speciality;
                 $scope.department = $rootScope.globals.department;
 
@@ -24,9 +24,26 @@ angular
                         date: Date.now()
                     };
 
-                    Report.createReport(data, function (err, data) {
-                        alert('success');
+                    $.confirm({
+                        title: 'Відправити звіт?',
+                        content: '',
+                        buttons: {
+                            something: {
+                                text: 'ок',
+                                action: function(){
+                                    // here the key 'something' will be used as the text.
+
+                                    Report.createReport(data, function (err, data) {
+                                        $location.path('/');
+                                    });
+                            }
+                            },
+                            somethingElse: {
+                                text: 'скасувати'
+                            }
+                        }
                     });
+
                 }
             }
         ]

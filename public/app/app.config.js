@@ -5,7 +5,6 @@ angular
     .config(['$locationProvider', '$routeProvider',
         function ($locationProvider, $routeProvider) {
             $locationProvider.hashPrefix('');
-
             $routeProvider
                 .when('/', {
                     template: '<home-page></home-page>'
@@ -18,6 +17,8 @@ angular
                 })
                 .when('/report', {
                     template: '<report></report>'
+                }).when('/schedule', {
+                    template: '<shedule></shedule>'
                 })
                 .when('/students', {
                     template: '<students></students>'
@@ -28,17 +29,12 @@ angular
                 .when('/register', {
                     template: '<sign-up></sign-up>'
                 })
-                .when('/phones', {
-                    template: '<phone-list></phone-list>'
-                })
-                .when('/phones/:phoneId', {
-                    template: '<phone-detail></phone-detail>'
-                })
                 .otherwise('/');
 
-        }]).run(['$rootScope', '$location', '$cookies', '$http', 'Auth',
-        function($rootScope, $location, $cookies, $http, Auth) {
-            $rootScope.location = $location.path()
+        }]).run(['$rootScope', '$location', '$cookies', '$http', 'Auth', 'editableOptions',
+        function($rootScope, $location, $cookies, $http, Auth, editableOptions) {
+            $rootScope.location = $location.path();
+            editableOptions.theme = 'bs3';
 
             checkAuth();
 

@@ -93,7 +93,22 @@ module.exports = function (db) {
 
                 Teacher.remove()
                     .exec(function (err) {
-                        callback(err);
+                        if (err) {
+                            return callback(err);
+                        }
+                        Department.remove()
+                            .exec(function (err) {
+                                if (err) {
+                                    return callback(err);
+                                }
+                                Specialty.remove()
+                                    .exec(function (err) {
+                                        if (err) {
+                                            return callback(err);
+                                        }
+                                        callback(err);
+                                    });
+                            });
                     });
             });
 

@@ -60,9 +60,8 @@ li{
     position: absolute;
     margin-left: auto;
     margin-right: auto;
-    left: 0;
-    right: 0;
-    top: 20%;
+    right: 12%;
+    top: 14%;
 }
 
 .login{

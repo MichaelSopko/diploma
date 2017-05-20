@@ -22,7 +22,7 @@ module.exports = function (app, db) {
     app.use('/reports', reportsRouter);
 
     app.use('/save', function (req, res, next) {
-        json.update('subjects.json', req.body)
+        json.update('public/subjects.json', req.body)
             .then(function(dat) {
                 res.send('jjh');
             });

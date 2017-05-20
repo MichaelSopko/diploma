@@ -707,9 +707,65 @@
     "id": 1,
     "day": 5,
     "course": 1,
-    "name": "вища математика",
+    "name": "Креслення та комп.графіка",
     "lesson": 1,
     "group": 1
+  },
+  {
+    "id": 1,
+    "day": 5,
+    "course": 1,
+    "name": "Прог-я та алгор.мов",
+    "lesson": 1,
+    "group": 4
+  },
+  {
+    "id": 1,
+    "day": 5,
+    "course": 1,
+    "name": "Комп.графіка",
+    "lesson": 1,
+    "group": 5
+  },
+  {
+    "id": 1,
+    "day": 5,
+    "course": 1,
+    "name": "Технол. програм.",
+    "lesson": 1,
+    "group": 7
+  },
+  {
+    "id": 1,
+    "day": 5,
+    "course": 1,
+    "name": "крес.комп.гр ",
+    "lesson": 2,
+    "group": 1
+  },
+  {
+    "id": 1,
+    "day": 5,
+    "course": 1,
+    "name": "інж.граф.(л)",
+    "lesson": 2,
+    "group": 2
+  },
+  {
+    "id": 1,
+    "day": 5,
+    "course": 1,
+    "name": "Прогр-я та алгоритм.мов",
+    "lesson": 2,
+    "group": 4
+  },
+  {
+    "id": 1,
+    "day": 5,
+    "course": 1,
+    "name": "Комп. графіка",
+    "lesson": 2,
+    "group": 5
   },
 
 ]

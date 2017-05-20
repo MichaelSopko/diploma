@@ -41,7 +41,7 @@
           {{ lesson || '' }}
         </td>
 
-        <td ng-repeat="group in groups">
+        <td class="col-lg-2" ng-repeat="group in groups">
 
            <span editable-text="getSubject(lesson, group).name" e-form="tableform">
                {{ getSubject(lesson, group) && getSubject(lesson, group).name }}

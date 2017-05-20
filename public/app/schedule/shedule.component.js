@@ -33,6 +33,7 @@ angular
                 $scope.lessons = [1, 2, 3, 4, 5, 6, 7];
                 $scope.courses = [1, 2, 3, 4, 5, 6];
                 $scope.course = 1;
+                $scope.variant = 2;
                 $scope.subjects = [];
                 $scope.serverdata = [];
 
@@ -76,7 +77,8 @@ angular
                             course: $scope.course,
                             name: "",
                             lesson: lesson,
-                            group: group
+                            group: group,
+                            variant: variant
                         };
                         $scope.subjects.push(item);
                     }
@@ -149,10 +151,14 @@ angular
 
                 // save edits
                 $scope.saveTable = function() {
+                    var subjects = _.union($scope.serverdata, $scope.subjects).map(function (item) {
+                        item.variant = $scope.variant;
+                        return item;
+                    });
                     $http({
                         method : "POST",
                         url : "save",
-                        data: _.union($scope.serverdata, $scope.subjects)
+                        data: subjects
                     }).then(function mySucces(response) {
 
                     }, function myError(response) {

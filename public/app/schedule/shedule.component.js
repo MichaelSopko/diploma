@@ -34,6 +34,7 @@ angular
                 $scope.courses = [1, 2, 3, 4, 5, 6];
                 $scope.course = 1;
                 $scope.subjects = [];
+                $scope.serverdata = [];
 
                 $scope.changeDay = function () {
                     $scope.getSubjects($scope.selectedDay, $scope.course);
@@ -48,9 +49,11 @@ angular
                         method : "GET",
                         url : "subjects.json"
                     }).then(function mySucces(response) {
+
                         $scope.subjects = _.filter(response.data, function(o) {
                             return o.day ==  dayId && o.course == courseId;
                         });
+                        $scope.serverdata = _.difference(response.data, $scope.subjects) ;
                     }, function myError(response) {
                     });
                 };
@@ -149,7 +152,7 @@ angular
                     $http({
                         method : "POST",
                         url : "save",
-                        data: $scope.subjects
+                        data: _.union($scope.serverdata, $scope.subjects)
                     }).then(function mySucces(response) {
 
                     }, function myError(response) {

@@ -38,28 +38,28 @@ angular
                 $scope.serverdata = [];
 
                 $scope.changeDay = function () {
-                    $scope.getSubjects($scope.selectedDay, $scope.course);
+                    $scope.getSubjects($scope.selectedDay, $scope.course, $scope.variant);
                 };
 
                 $scope.changeCourse = function () {
-                    $scope.getSubjects($scope.selectedDay, $scope.course);
+                    $scope.getSubjects($scope.selectedDay, $scope.course, $scope.variant);
                 };
 
-                $scope.getSubjects = function (dayId, courseId) {
+                $scope.getSubjects = function (dayId, courseId, variantId) {
                     $http({
                         method : "GET",
                         url : "subjects.json"
                     }).then(function mySucces(response) {
 
                         $scope.subjects = _.filter(response.data, function(o) {
-                            return o.day ==  dayId && o.course == courseId;
+                            return o.day ==  dayId && o.course == courseId && o.variant == variantId;
                         });
                         $scope.serverdata = _.difference(response.data, $scope.subjects) ;
                     }, function myError(response) {
                     });
                 };
 
-                $scope.getSubjects(1, 1);
+                $scope.getSubjects(1, 1, 1);
 
                 $scope.loadGroups = function() {
                     return $scope.groups.length ? null : [];
@@ -78,7 +78,7 @@ angular
                             name: "",
                             lesson: lesson,
                             group: group,
-                            variant: variant
+                            variant: $scope.variant
                         };
                         $scope.subjects.push(item);
                     }
@@ -152,7 +152,7 @@ angular
                 // save edits
                 $scope.saveTable = function() {
                     var subjects = _.union($scope.serverdata, $scope.subjects).map(function (item) {
-                        item.variant = $scope.variant;
+                        item.variant = item.variant || $scope.variant;
                         return item;
                     });
                     $http({

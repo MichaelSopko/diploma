@@ -15,6 +15,13 @@
           <option ng-repeat="course in courses" value="{{course}}">{{course}}</option>
         </select>
       </div>
+      <div class="form-group">
+      <label class="control-label" for="course">Варіант: </label>
+      <select id="variant" class="form-control" ng-model="course">
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+    </div>
     </div>
 
 
@@ -36,8 +43,8 @@
 
         <td ng-repeat="group in groups">
 
-           <span editable-text="getSubject(lesson, group) || ''" e-form="tableform">
-               {{ getSubject(lesson, group) }}
+           <span editable-text="getSubject(lesson, group).name" e-form="tableform">
+               {{ getSubject(lesson, group) && getSubject(lesson, group).name }}
           </span>
 
         </td>

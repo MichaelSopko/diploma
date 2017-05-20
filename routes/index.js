@@ -9,6 +9,7 @@ module.exports = function (app, db) {
     var specyalitiesRouter = require('./specyalities')(db);
     var studentsRouter = require('./students')(db);
     var reportsRouter = require('./reports')(db);
+    var json = require('json-update');
 
     app.get('/', function (req, res, next) {
         res.sendFile(path.join(__dirname, '../app/index.html'));
@@ -19,6 +20,13 @@ module.exports = function (app, db) {
     app.use('/specialties', specyalitiesRouter);
     app.use('/students', studentsRouter);
     app.use('/reports', reportsRouter);
+
+    app.use('/save', function (req, res, next) {
+        json.update('subjects.json', req.body)
+            .then(function(dat) {
+                res.send('jjh');
+            });
+    });
 
     function notFound(req, res, next){
         next();

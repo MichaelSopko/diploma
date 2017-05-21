@@ -36,6 +36,7 @@
     "json-update": "^3.0.0",
     "mongoose": "^4.9.3",
     "morgan": "^1.8.1",
+    "node-schedule": "^1.2.2",
     "node-uuid": "^1.4.8",
     "nodemailer": "^4.0.0",
     "nodemailer-sendgrid-transport": "^0.2.0"

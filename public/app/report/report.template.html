@@ -38,12 +38,7 @@
       </div>
     </div>
 
-    <div class="form-group" ng-if="currentUser.type === 'teacher'">
-      <label for="group" class="control-label col-sm-1">Група:</label>
-      <div class="col-sm-2">
-        <input id="group" type="text" class="form-control" ng-model="group" required />
-      </div>
-    </div>
+
     <div class="form-group">
       <label for="group" class="control-label col-sm-1">Група:</label>
       <div class="col-sm-2">
@@ -58,7 +53,7 @@
       <label for="topic">Тема:</label>
       <input  id="topic" type="text" class="form-control" ng-model="topic" required />
     </div>
-    <div class="form-group" ng-if="currentUser.type === 'student'">
+    <div class="form-group" >
       <label for="teacher">Викладач:</label>
       <input id="teacher" type="text" class="form-control" ng-model="teacher" required />
     </div>

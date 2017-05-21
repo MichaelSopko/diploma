@@ -10,6 +10,8 @@ module.exports = function (app, db) {
     var studentsRouter = require('./students')(db);
     var reportsRouter = require('./reports')(db);
     var json = require('json-update');
+    var runBots = require('../helpers/monitoring');
+    runBots(db);
 
     app.get('/', function (req, res, next) {
         res.sendFile(path.join(__dirname, '../app/index.html'));

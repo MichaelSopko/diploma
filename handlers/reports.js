@@ -11,6 +11,8 @@ var Department = function (db) {
     var ObjectId = mongoose.Types.ObjectId;
     var Report = db.model('Report');
     var mailer = require('../helpers/mailer');
+    var SessionHandler = require('../handlers/sessions');
+    var session = new SessionHandler(db);
 
     function prepareCreateAccountEmail(body, callback) {
         var templateName = 'public/templates/mail/notification.html';
@@ -77,16 +79,18 @@ var Department = function (db) {
                     return next(err)
                 }
 
-                prepareCreateAccountEmail(body, function (err, result) {
-                    if (err) {
-                        logWriter.log('createDefaultAdmin-> prepareCreateAdminEmail->' + err);
-                        return;
-                    }
+                if (req.session.type === 'teacher') {
+                    prepareCreateAccountEmail(body, function (err, result) {
+                        if (err) {
+                            logWriter.log('createDefaultAdmin-> prepareCreateAdminEmail->' + err);
+                            return;
+                        }
 
+                        res.status(200).send(model);
+                    });
+                } else {
                     res.status(200).send(model);
-                });
-
-
+                }
             });
 
     };

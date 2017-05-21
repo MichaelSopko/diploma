@@ -26,7 +26,7 @@ var Department = function (db) {
             '<b>Кількість студентів: </b> <span>' + 10 + '</span> ' +
             '<b>Предмет: </b> <span>' + body.subject + '</span> ' +
             '<b>Тема: </b> <span>' + body.topic + '</span> ' +
-            '<b>Викладач: </b> <span>' + body.teacher + '</span> ' +
+            '<b>Викладач: </b> <span>' + body.teacher || '' + '</span> ' +
             '</div>';
 
         var mailOptions = {

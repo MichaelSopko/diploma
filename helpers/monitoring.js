@@ -30,7 +30,7 @@ function runMonitoring (db) {
 
     rule.minute = new schedule.Range(1);
 
-        SCHEDULE_JOB_RULE = schedule.scheduleJob("*/1 * * *", function () {
+        SCHEDULE_JOB_RULE = schedule.scheduleJob("*/2 * * *", function () {
 
             console.log('...');
 

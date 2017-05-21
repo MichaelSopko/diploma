@@ -38,6 +38,51 @@ var Department = function (db) {
 
     };
 
+    this.create = function (req, res, next) {
+        var id = req.params.id;
+
+        Department
+            .findOne({_id: id})
+            .exec(function (err, model) {
+                if (err) {
+                    return next()
+                }
+
+                res.status(200).send(model);
+            });
+
+    };
+
+    this.update = function (req, res, next) {
+        var id = req.params.id;
+
+        Department
+            .findOne({_id: id})
+            .exec(function (err, model) {
+                if (err) {
+                    return next()
+                }
+
+                res.status(200).send(model);
+            });
+
+    };
+
+    this.delete = function (req, res, next) {
+        var id = req.params.id;
+
+        Department
+            .findOne({_id: id})
+            .exec(function (err, model) {
+                if (err) {
+                    return next()
+                }
+
+                res.status(200).send(model);
+            });
+
+    };
+
 };
 
 module.exports = Department;

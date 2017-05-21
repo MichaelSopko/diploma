@@ -22,12 +22,12 @@ angular
                     $scope.departments = data;
                 });
 
-                Specialty.getSpecialties({}, function (err, data) {
-                    $scope.specialities = data;
-                });
-
                 function checkDepartmnet(id) {
                     $scope.departmentId = id;
+
+                    Specialty.getSpecialties({departmentId: id}, function (err, data) {
+                        $scope.specialities = data;
+                    });
 
                     Department.getById(id, function (err, data) {
                         $scope.department = data;

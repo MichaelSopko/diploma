@@ -7,7 +7,7 @@ angular
         controller: ['$scope', 'Specialty', function HomePageController($scope, Specialty) {
             $scope.departments = [];
 
-            Specialty.getSpecialties({}, function (err, data) {
+            Specialty.getSpecialties({departmentId: departmentId}, function (err, data) {
 
 
                 $scope.departments = data;

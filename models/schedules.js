@@ -10,9 +10,10 @@ module.exports = function (db) {
             type: ObjectId,
             rel: 'Teacher'
         },
-        name       : {type: String},
-        type       : {type: String},
-        classroom  : {type: String},
+        subjectId     : {
+            type: ObjectId,
+            rel: 'Subject'
+        },
         dayOfWeek  : {type: String},
         parity     : {type: String},
         dateOfStart: {type: Date, default: Date.now},

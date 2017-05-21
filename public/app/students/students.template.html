@@ -1,11 +1,25 @@
 <div class="report-container container">
     <h2 class="report-header">Список студентів</h2>
     <table class="ui sortable celled striped table">
+
+        <div class="form-inline day">
+            <div class="form-group">
+                <label class="control-label" for="course">Курс: </label>
+                <select id="course" class="form-control">
+                    <option value="1">6</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label class="control-label" for="variant">Група: </label>
+                <select id="variant" class="form-control">
+                    <option value="1">6</option>
+                    <option value="2">2</option>
+                </select>
+            </div>
+        </div>
+
         <div class="form-group">
-            <label for="course" class="control-label col-sm-1">Курс: </label>
-            <input id="course" type="text" class="form-control col-sm-2">
-            <label for="group" class="control-label col-sm-1">Група: </label>
-            <input id="group" type="text" class="form-control col-sm-2">
             <thead class="thead-inverse">
         </div>
 
@@ -24,8 +38,6 @@
             <tr ng-repeat="student in students | orderBy : convertSorting()">
                 <td class="col-sm-3">{{student.firstName}}</td>
                 <td class="col-sm-3">{{student.lastName}}</td>
-                <td class="col-sm-2">{{student.ticketNumber}}</td>
-                <td class="col-sm-2">{{student.email}}</td>
                 <td class="col-sm-2">{{student.email}}</td>
             </tr>
         </tbody>

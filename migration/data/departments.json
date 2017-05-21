@@ -23,32 +23,113 @@
     {
       "name": "ТТЕ З/С інформаційна безпека",
       "imageUrl": "img/departments/teib.png",
-      "specialties": []
+      "specialties": [{
+        "name": "астрономія",
+        "imageUrl": "img/departments/astronomy.png"
+      },{
+        "name": "БІКС",
+        "imageUrl": "img/departments/biks.png"
+      },{
+        "name": "біомед та фіз.ел",
+        "imageUrl": "img/departments/bio.png"
+      },{
+        "name": "Середня освіта",
+        "imageUrl": "img/departments/medium.png"
+      },{
+        "name": "СТЗІ",
+        "imageUrl": "img/departments/stzi.png"
+      }]
     },
     {
       "name": "Квантова електроніка",
       "imageUrl": "img/departments/cvant.png",
-      "specialties": []
+      "specialties": [{
+        "name": "астрономія",
+        "imageUrl": "img/departments/astronomy.png"
+      },{
+        "name": "БІКС",
+        "imageUrl": "img/departments/biks.png"
+      },{
+        "name": "біомед та фіз.ел",
+        "imageUrl": "img/departments/bio.png"
+      },{
+        "name": "Середня освіта",
+        "imageUrl": "img/departments/medium.png"
+      },{
+        "name": "СТЗІ",
+        "imageUrl": "img/departments/stzi.png"
+      }]
     },
     {
       "name": "Фізика напівпровідників",
       "imageUrl": "img/departments/napivprov.png",
-      "specialties": []
+      "specialties": [{
+        "name": "астрономія",
+        "imageUrl": "img/departments/astronomy.png"
+      },{
+        "name": "БІКС",
+        "imageUrl": "img/departments/biks.png"
+      },{
+        "name": "біомед та фіз.ел",
+        "imageUrl": "img/departments/bio.png"
+      },{
+        "name": "Середня освіта",
+        "imageUrl": "img/departments/medium.png"
+      },{
+        "name": "СТЗІ",
+        "imageUrl": "img/departments/stzi.png"
+      }]
     },
     {
       "name": "Оптика",
       "imageUrl": "img/departments/optica.png",
-      "specialties": []
+      "specialties": [{
+        "name": "астрономія",
+        "imageUrl": "img/departments/astronomy.png"
+      },{
+        "name": "БІКС",
+        "imageUrl": "img/departments/biks.png"
+      },{
+        "name": "біомед та фіз.ел",
+        "imageUrl": "img/departments/bio.png"
+      },{
+        "name": "Середня освіта",
+        "imageUrl": "img/departments/medium.png"
+      },{
+        "name": "СТЗІ",
+        "imageUrl": "img/departments/stzi.png"
+      }]
     },
     {
       "name": "Прикладна фізика",
       "imageUrl": "img/departments/prykladna.png",
-      "specialties": []
+      "specialties": [{
+        "name": "Комп'ютерна експертиза",
+        "imageUrl": "img/departments/robo.png"
+      },{
+        "name": "Фізико-технічна експертиза",
+        "imageUrl": "img/departments/exp.png"
+      }]
     },
     {
       "name": "Фізика ядра та елементарних частин",
       "imageUrl": "img/departments/nuclear.png",
-      "specialties": []
+      "specialties": [{
+        "name": "астрономія",
+        "imageUrl": "img/departments/astronomy.png"
+      },{
+        "name": "БІКС",
+        "imageUrl": "img/departments/biks.png"
+      },{
+        "name": "біомед та фіз.ел",
+        "imageUrl": "img/departments/bio.png"
+      },{
+        "name": "Середня освіта",
+        "imageUrl": "img/departments/medium.png"
+      },{
+        "name": "СТЗІ",
+        "imageUrl": "img/departments/stzi.png"
+      }]
     }
   ]
 }

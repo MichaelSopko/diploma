@@ -12,8 +12,13 @@ var Department = function (db) {
     var Specialty = db.model('Specialty');
 
     this.getAll = function (req, res, next) {
+        var query = req.query;
+        var departmentId = query.departmentId;
+
         Specialty
-            .find()
+            .find({
+                departmentId: departmentId
+            })
             .exec(function (err, models) {
                 if (err) {
                     return next()
@@ -24,6 +29,51 @@ var Department = function (db) {
     };
 
     this.getOne = function (req, res, next) {
+        var id = req.params.id;
+
+        Specialty
+            .findOne({_id: id})
+            .exec(function (err, model) {
+                if (err) {
+                    return next()
+                }
+
+                res.status(200).send(model);
+            });
+
+    };
+
+    this.create = function (req, res, next) {
+        var id = req.params.id;
+
+        Specialty
+            .findOne({_id: id})
+            .exec(function (err, model) {
+                if (err) {
+                    return next()
+                }
+
+                res.status(200).send(model);
+            });
+
+    };
+
+    this.update = function (req, res, next) {
+        var id = req.params.id;
+
+        Specialty
+            .findOne({_id: id})
+            .exec(function (err, model) {
+                if (err) {
+                    return next()
+                }
+
+                res.status(200).send(model);
+            });
+
+    };
+
+    this.delete = function (req, res, next) {
         var id = req.params.id;
 
         Specialty

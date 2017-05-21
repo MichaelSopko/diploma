@@ -9,7 +9,7 @@ angular
             $http({
                 url: '/reports',
                 method: 'POST',
-                params: params
+                data: params
             }).then(function (response) {
                 callback(null, response.data);
             }, callback);

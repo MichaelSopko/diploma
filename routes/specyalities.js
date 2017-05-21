@@ -11,6 +11,9 @@ module.exports = function (db) {
 
     router.route('/').get(session.isAuthenticatedUser, specialtiesHandler.getAll);
     router.route('/:id').get(session.isAuthenticatedUser, specialtiesHandler.getOne);
+    router.route('/:id').post(session.isAdmin, specialtiesHandler.create);
+    router.route('/:id').put(session.isAdmin, specialtiesHandler.update);
+    router.route('/:id').delete(session.isAdmin, specialtiesHandler.delete);
 
     return router;
 };

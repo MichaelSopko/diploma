@@ -19,16 +19,8 @@ angular
                 display: 'Ім\'я',
                 type: 'string'
             }, {
-                variable: 'ticketNumber',
-                display: 'Номер студенського',
-                type: 'string'
-            }, {
                 variable: 'email',
                 display: 'Email',
-                type: 'string'
-            }, {
-                variable: 'absents',
-                display: 'Кількість пропущених занять',
                 type: 'string'
             }];
 
